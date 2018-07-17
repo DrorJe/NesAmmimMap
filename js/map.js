@@ -34,7 +34,8 @@ var map = new google.maps.Map(document.getElementById('map'), {
     mapTypeId: google.maps.MapTypeId.HYBRID
 });
 
-//get locations
+//get locations 1
+//new line
 
 //set markers on map
 for (i = 0; i < locations.length; i++) 
