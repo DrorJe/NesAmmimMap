@@ -36,6 +36,7 @@ var map = new google.maps.Map(document.getElementById('map'), {
 
 //get locations 1
 //new line
+//new line from github
 
 //set markers on map
 for (i = 0; i < locations.length; i++) 
