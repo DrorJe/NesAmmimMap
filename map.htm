@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html> 
+<head>
+  <meta http-equiv="content-type" content="text/html" charset="utf-8" /> 
+  <title>Nes-Ammim Map & Address book</title> 
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false" ></script>
+  <STYLE> @import url(css/map.css); </STYLE>
+</head> 
+<body class="BODY_STYLE">
+    <table class="center" border="0px" cellpadding="0" cellspacing="0" style="border-color:#E5EBDE;">
+        <tr>
+            <td>
+                <div id="map" style="width: 800px; height: 700px;"></div>
+            </td>
+            <td style="width:10px;"></td>
+            <td style="width:300px; background-color:#B0CA99; margin-top:0px;">
+                <table width="100%" dir="rtl" style="height:700px; border:0px; ">
+                    <tr style="height:100px;">
+                        <td align="center" colspan="2" style="font-size:25px; color:White;"><B>נס-עמים</B><BR>מפה וספר-טלפונים
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:100px;">
+                            שם משפחה:
+                        </td>
+                        <td>
+                            <select id="cmb_family" onchange="doSomethingCombo(this);">
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            מגרש:
+                        </td>
+                        <td>
+                            <select id="cmb_area" onchange="doSomethingComboArea(this);">
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            שמות:
+                        </td>
+                        <td>
+                            <input type="text" id="input_parents" readonly/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            שמות ילדים:
+                        </td>
+                        <td>
+                            <input type="text" id="input_children" readonly/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            טלפון:
+                        </td>
+                        <td>
+                            <input type="text" id="input_tel" readonly/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <img id="img_family" src="img/nes_ammim_logo.jpg" width="100%" onError="this.src='img/nes_ammim_logo.jpg';"/>
+                        </td>
+                    </tr>
+                    <tr style="height:100%;">
+                        <td colspan="2">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+  
+
+  <script src="js/locations.js"></script>
+  <script src="js/general.js"></script>
+  <script src="js/map.js"></script>
+</body>
+</html>
